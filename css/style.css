@@ -1,0 +1,139 @@
+* {
+	font-family: 'Lato', sans-serif;
+	margin-left: 1%;
+}
+
+#wrapper {
+	width: 100%;
+}
+
+input {
+	margin: 0.1px !important;
+	background-color: #f4f4f4 !important;
+	width: 30% !important; 
+}
+
+select {
+	float: left;
+	font-size: 0.8rem !important;
+	color: #9e9e9e;
+	width: 9.4%;
+	margin-left: 11px;
+	background-color: #f4f4f4 !important;
+	border-radius: 0px !important;
+	border-bottom: 1px solid #cccaca;
+	text-transform: uppercase;
+}
+
+#long-select {
+	width: 30%;
+	margin-left: 0;
+	top: 0 !important;
+}
+
+/*#zip {
+	width: 30% !important;
+}*/
+
+#state-province {
+	float: none;
+	margin-left: 199px;
+	margin-top: -44px;
+	width: 14%;
+}
+
+
+h1 {
+	color: #02316b;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin-top: 0.7%;
+	margin-left: 1%;
+	
+}
+
+h2 {
+	color: #1262b2;
+	font-size: 0.8em;
+	margin-top: 0.2%;
+	margin-left: 1%;
+	text-transform: uppercase;
+	padding-bottom: 0;
+	line-height: 0;
+}
+
+
+h3 {
+	color: #1262b2;
+	font-size: 0.8em;
+	margin: 0 0 -2.2rem 0;
+	text-transform: uppercase;
+	padding-bottom: 0;
+}
+
+
+
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 13px 80px 46px;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+
+/* Button 2 */
+.btn-2 {
+	background: #71bf6f;
+	color: #fff;
+	box-shadow: 0 6px #539960;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+/* Button 2a */
+.btn-2a {
+	border-radius: 0 0 5px 5px;
+}
+
+.btn-2a:hover {
+	box-shadow: 0 4px #539960;
+	top: 2px;
+	background: #71bf6f !important;
+}
+
+.btn-2a:active {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+	color: white;
+}
+
+.btn-2a:visited {
+	box-shadow: 0 0 #ab3c3c;
+	top: 6px;
+	color: white;
+}

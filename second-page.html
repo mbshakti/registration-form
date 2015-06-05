@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <!-- materialize -->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/style.css">
+      <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+      <!--optimize for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  </head>
+
+<body>
+
+<div id="wrapper">
+  <form name="preregistrationform" id="preregistrationform" method="post" action="preregistration.cfm" novalidate="novalidate"> 
+  	<h1>Trip Information</h1>
+    <div class="input-field col s12">
+    <h3>University (optional)</h3> <br>
+      <select id="long-select" class="browser-default">
+        <option value="" disabled selected>Season you would like to travel in</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select> <br> <br>
+  </div/>
+  <div class="input-field col s12">
+  <h3>Preferred Travel Season</h3> <br>
+      <select id="long-select" class="browser-default">
+        <option value="" disabled selected>Season you would like to travel in</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select> <br> <br>
+    </div>
+  <div class="input-field col s12">
+  <h3>Trip Organizer</h3> <br>
+      <select id="long-select" class="browser-default">
+        <option value="" disabled selected>Undecided</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+  </div> <br> <br>
+    <div class="input-field col s12">
+      <h3>Referral Email (If Applicable)</h3> <br>
+      <input id="zip" type="text">
+      <label for="email">Email Address</label>
+    </div>
+
+
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
