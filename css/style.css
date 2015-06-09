@@ -1,16 +1,80 @@
 * {
 	font-family: 'Lato', sans-serif;
-	margin-left: 1%;
 }
 
-#wrapper {
+#zipcode {
+	width: 14.5%;
+	margin-right: 0.8%;
+}
+
+#wrapper{
+	position: absolute;
+	left: 35%;
 	width: 100%;
 }
 
+#header {
+	width: 100%;
+}
+
+#header-title {
+	z-index: 20;
+}
+
+/* General button style (reset) */
+.btn {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 13px 5% 46px;
+	display: inline-block;
+	margin: 2% 0 0 7%;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 16%;
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+@media (max-width: 480px) {
+	#wrapper {
+	position: absolute;
+	left:5%;
+	width: 300%;
+	}
+
+	#zipcode {
+		width: 15%;
+		margin-right: 0.2%;
+	}
+
+	.btn {
+		width: 20%;
+		margin: 2% 0 0 5%;
+	}
+}
+
+
 input {
-	margin: 0.1px !important;
+	margin: 0.1px 0 0 0;
 	background-color: #f4f4f4 !important;
-	width: 30% !important; 
+	width: 30%; 
 }
 
 select {
@@ -18,7 +82,7 @@ select {
 	font-size: 0.8rem !important;
 	color: #9e9e9e;
 	width: 9.4%;
-	margin-left: 11px;
+	margin-right: 1%;
 	background-color: #f4f4f4 !important;
 	border-radius: 0px !important;
 	border-bottom: 1px solid #cccaca;
@@ -29,17 +93,21 @@ select {
 	width: 30%;
 	margin-left: 0;
 	top: 0 !important;
+	margin-top: 0rem;
 }
 
-/*#zip {
-	width: 30% !important;
-}*/
 
-#state-province {
+#referral {
+	width: 30% !important;
+}
+
+
+#PrimState {
 	float: none;
-	margin-left: 199px;
-	margin-top: -44px;
-	width: 14%;
+/*	margin-left: 181px;
+	margin-top: -44px;*/
+	width: 14.7%;
+	display: inline;
 }
 
 
@@ -47,8 +115,7 @@ h1 {
 	color: #02316b;
 	text-transform: uppercase;
 	font-size: 1em;
-	margin-top: 0.7%;
-	margin-left: 1%;
+	margin-top: 1%;
 	
 }
 
@@ -63,51 +130,33 @@ h2 {
 }
 
 
+p {
+	color: #1262b2;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	padding-bottom: 0;
+	width: 32%;
+}
+
+
 h3 {
 	color: #1262b2;
 	font-size: 0.8em;
-	margin: 0 0 -2.2rem 0;
+	margin: 0 0 -2.2rem 0rem;
 	text-transform: uppercase;
 	padding-bottom: 0;
+	width: 30%;
 }
 
 
 
-/* General button style (reset) */
-.btn {
-	border: none;
-	font-family: inherit;
-	font-size: inherit;
-	color: inherit;
-	background: none;
-	cursor: pointer;
-	padding: 13px 80px 46px;
-	display: inline-block;
-	margin: 15px 30px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-weight: 700;
-	outline: none;
-	position: relative;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
 
-.btn:after {
-	content: '';
-	position: absolute;
-	z-index: -1;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-}
 
 
 
 /* Button 2 */
 .btn-2 {
-	background: #71bf6f;
+	background: #71bf6f !important;
 	color: #fff;
 	box-shadow: 0 6px #539960;
 	-webkit-transition: none;

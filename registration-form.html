@@ -11,71 +11,681 @@
   </head>
 
 <body>
-
-<div id="wrapper">
+  <img id="header" src="img/header.png">
+<div id="wrapper"> 
   <form name="preregistrationform" id="preregistrationform" method="post" action="preregistration.cfm" novalidate="novalidate"> 
   	<h1>Personal Information</h1>
-    <h2>Please enter your name as it appears (or will appear) on your passport.</h2>
+    <p>Please enter your name as it appears (or will appear) on your passport.</p>
     <div class="input-field col s12">
-  		<input id="firstname" type="text"> <br>
+  		<input id="First_Name" maxlength="50" name="First_Name" required="" type="text"> <br>
   		<label for="email">First Name</label>
     </div>
     <div class="input-field col s12">
-      <input id="firstname" type="text"> <br>
+      <input id="Middle_Name" maxlength="50" name="Middle_Name" type="text"> <br>
       <label for="email">Middle Name</label>
     </div>
     <div class="input-field col s12">
-      <input id="firstname" type="text"> <br>
+      <input id="Last_Name" maxlength="50" name="Last_Name" required="" type="text"> <br>
       <label for="email">Last Name</label>
   	</div>
   <label>Date of Birth</label> <br>
-      <select class="browser-default">
-        <option value="" disabled selected>Month</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
+      <select class="browser-default" id="birth_month" name="birth_month" required="">
+ <option value="">
+                                    Month
+                                </option>
+
+                                <option value="1">
+                                    Jan
+                                </option>
+
+                                <option value="2">
+                                    Feb
+                                </option>
+
+                                <option value="3">
+                                    Mar
+                                </option>
+
+                                <option value="4">
+                                    Apr
+                                </option>
+
+                                <option value="5">
+                                    May
+                                </option>
+
+                                <option value="6">
+                                    Jun
+                                </option>
+
+                                <option value="7">
+                                    Jul
+                                </option>
+
+                                <option value="8">
+                                    Aug
+                                </option>
+
+                                <option value="9">
+                                    Sep
+                                </option>
+
+                                <option value="10">
+                                    Oct
+                                </option>
+
+                                <option value="11">
+                                    Nov
+                                </option>
+
+                                <option value="12">
+                                    Dec
+                                </option>
       </select>
-      <select class="browser-default">
-        <option value="" disabled selected>Date</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
+      <select class="browser-default" id="birth_date" name="birth_date" required="">
+   <option value="">
+                                    Date
+                                </option>
+
+                                <option>
+                                    1
+                                </option>
+
+                                <option>
+                                    2
+                                </option>
+
+                                <option>
+                                    3
+                                </option>
+
+                                <option>
+                                    4
+                                </option>
+
+                                <option>
+                                    5
+                                </option>
+
+                                <option>
+                                    6
+                                </option>
+
+                                <option>
+                                    7
+                                </option>
+
+                                <option>
+                                    8
+                                </option>
+
+                                <option>
+                                    9
+                                </option>
+
+                                <option>
+                                    10
+                                </option>
+
+                                <option>
+                                    11
+                                </option>
+
+                                <option>
+                                    12
+                                </option>
+
+                                <option>
+                                    13
+                                </option>
+
+                                <option>
+                                    14
+                                </option>
+
+                                <option>
+                                    15
+                                </option>
+
+                                <option>
+                                    16
+                                </option>
+
+                                <option>
+                                    17
+                                </option>
+
+                                <option>
+                                    18
+                                </option>
+
+                                <option>
+                                    19
+                                </option>
+
+                                <option>
+                                    20
+                                </option>
+
+                                <option>
+                                    21
+                                </option>
+
+                                <option>
+                                    22
+                                </option>
+
+                                <option>
+                                    23
+                                </option>
+
+                                <option>
+                                    24
+                                </option>
+
+                                <option>
+                                    25
+                                </option>
+
+                                <option>
+                                    26
+                                </option>
+
+                                <option>
+                                    27
+                                </option>
+
+                                <option>
+                                    28
+                                </option>
+
+                                <option>
+                                    29
+                                </option>
+
+                                <option>
+                                    30
+                                </option>
+
+                                <option>
+                                    31
+                                </option>
       </select>
-      <select class="browser-default">
-        <option value="" disabled selected>Year</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
+      <select class="browser-default" id="birth_year" name="birth_year" required="">
+ <option value="">
+                                    Year
+                                </option>
+
+                                <option>
+                                    2000
+                                </option>
+
+                                <option>
+                                    1999
+                                </option>
+
+                                <option>
+                                    1998
+                                </option>
+
+                                <option>
+                                    1997
+                                </option>
+
+                                <option>
+                                    1996
+                                </option>
+
+                                <option>
+                                    1995
+                                </option>
+
+                                <option>
+                                    1994
+                                </option>
+
+                                <option>
+                                    1993
+                                </option>
+
+                                <option>
+                                    1992
+                                </option>
+
+                                <option>
+                                    1991
+                                </option>
+
+                                <option>
+                                    1990
+                                </option>
+
+                                <option>
+                                    1989
+                                </option>
+
+                                <option>
+                                    1988
+                                </option>
+
+                                <option>
+                                    1987
+                                </option>
+
+                                <option>
+                                    1986
+                                </option>
+
+                                <option>
+                                    1985
+                                </option>
+
+                                <option>
+                                    1984
+                                </option>
+
+                                <option>
+                                    1983
+                                </option>
+
+                                <option>
+                                    1982
+                                </option>
+
+                                <option>
+                                    1981
+                                </option>
+
+                                <option>
+                                    1980
+                                </option>
+
+                                <option>
+                                    1979
+                                </option>
+
+                                <option>
+                                    1978
+                                </option>
+
+                                <option>
+                                    1977
+                                </option>
+
+                                <option>
+                                    1976
+                                </option>
+
+                                <option>
+                                    1975
+                                </option>
+
+                                <option>
+                                    1974
+                                </option>
+
+                                <option>
+                                    1973
+                                </option>
+
+                                <option>
+                                    1972
+                                </option>
+
+                                <option>
+                                    1971
+                                </option>
+
+                                <option>
+                                    1970
+                                </option>
+
+                                <option>
+                                    1969
+                                </option>
+
+                                <option>
+                                    1968
+                                </option>
+
+                                <option>
+                                    1967
+                                </option>
+
+                                <option>
+                                    1966
+                                </option>
+
+                                <option>
+                                    1965
+                                </option>
+
+                                <option>
+                                    1964
+                                </option>
+
+                                <option>
+                                    1963
+                                </option>
+
+                                <option>
+                                    1962
+                                </option>
+
+                                <option>
+                                    1961
+                                </option>
+
+                                <option>
+                                    1960
+                                </option>
       </select> <br> <br>
     <div class="input-field col s12">
-      <input id="zip" type="text">
+      <input id="zipcode" maxlength="20" name="zipcode" type="text" required="" value=""> 
       <label for="email">Zip/Postal Code</label>
-      <select id="state-province" class="browser-default">
-        <option value="" disabled selected>State / Province</option>
-        <option value="1">Option 1</option>
-        <option value="2">Option 2</option>
-        <option value="3">Option 3</option>
+      <select id="PrimState" name="PrimState" required="" class="browser-default">
+<option value="">
+                                    State/Province
+                                </option>
+
+                                <option value="13">
+                                    Alabama
+                                </option>
+
+                                <option value="14">
+                                    Alaska
+                                </option>
+
+                                <option value="1">
+                                    Alberta
+                                </option>
+
+                                <option value="15">
+                                    Arizona
+                                </option>
+
+                                <option value="16">
+                                    Arkansas
+                                </option>
+
+                                <option value="2">
+                                    British Columbia
+                                </option>
+
+                                <option value="17">
+                                    California
+                                </option>
+
+                                <option value="18">
+                                    Colorado
+                                </option>
+
+                                <option value="19">
+                                    Connecticut
+                                </option>
+
+                                <option value="20">
+                                    Delaware
+                                </option>
+
+                                <option value="21">
+                                    District of Columbia
+                                </option>
+
+                                <option value="22">
+                                    Florida
+                                </option>
+
+                                <option value="23">
+                                    Georgia
+                                </option>
+
+                                <option value="65">
+                                    Guam
+                                </option>
+
+                                <option value="24">
+                                    Hawaii
+                                </option>
+
+                                <option value="25">
+                                    Idaho
+                                </option>
+
+                                <option value="26">
+                                    Illinois
+                                </option>
+
+                                <option value="27">
+                                    Indiana
+                                </option>
+
+                                <option value="28">
+                                    Iowa
+                                </option>
+
+                                <option value="29">
+                                    Kansas
+                                </option>
+
+                                <option value="30">
+                                    Kentucky
+                                </option>
+
+                                <option value="31">
+                                    Louisiana
+                                </option>
+
+                                <option value="32">
+                                    Maine
+                                </option>
+
+                                <option value="3">
+                                    Manitoba
+                                </option>
+
+                                <option value="33">
+                                    Maryland
+                                </option>
+
+                                <option value="34">
+                                    Massachusetts
+                                </option>
+
+                                <option value="35">
+                                    Michigan
+                                </option>
+
+                                <option value="36">
+                                    Minnesota
+                                </option>
+
+                                <option value="37">
+                                    Mississippi
+                                </option>
+
+                                <option value="38">
+                                    Missouri
+                                </option>
+
+                                <option value="39">
+                                    Montana
+                                </option>
+
+                                <option value="40">
+                                    Nebraska
+                                </option>
+
+                                <option value="41">
+                                    Nevada
+                                </option>
+
+                                <option value="4">
+                                    New Brunswick
+                                </option>
+
+                                <option value="42">
+                                    New Hampshire
+                                </option>
+
+                                <option value="43">
+                                    New Jersey
+                                </option>
+
+                                <option value="44">
+                                    New Mexico
+                                </option>
+
+                                <option value="45">
+                                    New York
+                                </option>
+
+                                <option value="5">
+                                    Newfoundland
+                                </option>
+
+                                <option value="46">
+                                    North Carolina
+                                </option>
+
+                                <option value="47">
+                                    North Dakota
+                                </option>
+
+                                <option value="6">
+                                    Northwest Territories
+                                </option>
+
+                                <option value="99">
+                                    Not Applicable
+                                </option>
+
+                                <option value="7">
+                                    Nova Scotia
+                                </option>
+
+                                <option value="66">
+                                    Nunavut
+                                </option>
+
+                                <option value="48">
+                                    Ohio
+                                </option>
+
+                                <option value="49">
+                                    Oklahoma
+                                </option>
+
+                                <option value="8">
+                                    Ontario
+                                </option>
+
+                                <option value="50">
+                                    Oregon
+                                </option>
+
+                                <option value="51">
+                                    Pennsylvania
+                                </option>
+
+                                <option value="9">
+                                    Prince Edward Island
+                                </option>
+
+                                <option value="64">
+                                    Puerto Rico
+                                </option>
+
+                                <option value="10">
+                                    Quebec
+                                </option>
+
+                                <option value="52">
+                                    Rhode Island
+                                </option>
+
+                                <option value="11">
+                                    Saskatchewan
+                                </option>
+
+                                <option value="53">
+                                    South Carolina
+                                </option>
+
+                                <option value="54">
+                                    South Dakota
+                                </option>
+
+                                <option value="55">
+                                    Tennessee
+                                </option>
+
+                                <option value="56">
+                                    Texas
+                                </option>
+
+                                <option value="98">
+                                    Unknown
+                                </option>
+
+                                <option value="67">
+                                    US Virgin Islands
+                                </option>
+
+                                <option value="57">
+                                    Utah
+                                </option>
+
+                                <option value="58">
+                                    Vermont
+                                </option>
+
+                                <option value="59">
+                                    Virginia
+                                </option>
+
+                                <option value="60">
+                                    Washington
+                                </option>
+
+                                <option value="61">
+                                    West Virginia
+                                </option>
+
+                                <option value="62">
+                                    Wisconsin
+                                </option>
+
+                                <option value="63">
+                                    Wyoming
+                                </option>
+
+                                <option value="12">
+                                    Yukon Territories
+                                </option>
       </select> 
     </div>
     <h1>Contact Information</h1>
-    <h2>Enter a personal email that you use frequently. School email addresses ending in .edu will not be accepted</h2>
+    <p>Enter a personal email that you use frequently. School email addresses ending in .edu will not be accepted</p>
     <div class="input-field col s12">
-      <input id="firstname" type="text"> <br>
+      <input id="Email" maxlength="100" name="Email" type="text"> <br>
       <label for="email">Email Address</label>
     </div>
     <div class="input-field col s12">
-      <input id="firstname" type="text"> <br>
+      <input id="Email_Confirm" maxlength="100" name="Email_Confirm"  type="text"> <br>
       <label for="email">Confirm Email Address</label>
     </div>
     <div class="input-field col s12">
-      <input id="firstname" type="text"> <br>
+      <input id="Phone_Preregister" maxlength="20" name="Phone_Preregister" required="" type="text"> <br>
       <label for="email">Cell Phone</label>
     </div>
   <button class="btn btn-2 btn-2a"><a href="/second-page.html">Continue</a></button>
   </form>
 </div/>
 
+
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
